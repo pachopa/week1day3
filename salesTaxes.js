@@ -38,13 +38,7 @@ function calculateSalesTax(salesData, salesTax) {
         output[companyName] = { "totalSales":  companySales[a], "totalTaxes": companySales[a] * provinceTax };
       }
     }
-    // for(var b = 0; b < companySales.length; b++) {
-    //   if(output[companyProvince]) {
-    //     output[companyName].totalTaxes += companySales[b] * provinceTax;
-    //   } else {
-    //     output[companyName] = { totalTaxes: companySales[b] * provinceTax };
-    //   }
-    // }
+
   }
   return output;
 }
